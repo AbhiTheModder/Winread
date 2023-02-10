@@ -1,6 +1,5 @@
-# FunReader数据采集规则说明
-
-[示例](https://github.com/gstory0404/fun_reader/blob/master/file/spider.json)
+# FunReader data collection rules description
+[example](https://github.com/AbhiTheModder/Winread/blob/master/file/spider.json)
 
 
 ```
@@ -66,91 +65,91 @@
 ]
 ```
 
-数据均通过xptah规则进行提取！
+The data is extracted through XPATH rules!
 
 ## sourceName
-书源名称
+Book source name
 
 ## sourceUrl
-书源域名
+The domain name of the source of the book
 
 ## head
-请求头部参数，如"{\"abc\":\"a\"}"
+Request header parameters，as"{\"abc\":\"a\"}"
 
 ## recommend
-推荐列表
-|  字段   | 说明  |
+Recommended list
+|  field   | illustrate  |
 |  ----  | ----  |
-|  recommendName  | 推荐栏目名称  |
-|  recommendUrl  | 推荐栏目链接  |
+|  recommendName  | Recommended column name  |
+|  recommendUrl  | Links to recommended columns  |
 
 
 
 ## recommendBooks
-推荐栏目书籍列表
+List of recommended column books
 
-|  字段   | 说明  |
+|  Field | Description |
 |  ----  | ----  |
-|  books  | 推荐栏目书籍列表集合，如果存在翻页则固定&page&为页码  |
-|  name  | 集合item中解析书名  |
-|  author  | 集合item中解析作者  |
-|  cover  | 集合item中解析封面  |
-|  intro  | 集合item中解析简介  |
-|  category  | 集合item中解析分类  |
-|  lastChapter  | 集合item中解析最后一章名称  |
-|  bookUrl  | 集合item中解析书籍链接  |
+|  books  | Recommended column book list collection, if there is a page turn, fixed &page& to page number |
+|  name  | The book title | is parsed in the collection item
+|  author  | Resolve the author | in the collection item
+|  cover  | Parse the cover page | in the collection item
+|  intro  | Introduction to parsing in collection items |
+|  category  | Parse the classification | in the collection item
+|  lastChapter  | The last chapter name | is resolved in the collection item
+|  bookUrl  | Parse book links in the collection item |
 
 ## search
-搜索
+Search
 
-|  字段   | 说明  |
+|  Field | Description |
 |  ----  | ----  |
-|  url  | 链接  |
-|  method  | 请求方式  |
-|  body  | post时需要传入的参数，"{\"searchkey\":\"&key&\"，搜索关键字为&key&固定写法  |
-|  contentType  | 请求头contentType  |
+|  url  | Link |
+|  method  | Request Method |
+|  body  | The parameter that needs to be passed in when post, "{"searchkey":"&key&", the search keyword is &key&fixed writing |
+|  contentType  | Request header contentType |
 
 ## searchBooks
-搜索小说列表
+Search the list of novels
 
-|  字段   | 说明  |
+|  Field | Description |
 |  ----  | ----  |
-|  books  | 推荐栏目书籍列表集合  |
-|  name  | 集合item中解析书名  |
-|  author  | 集合item中解析作者  |
-|  cover  | 集合item中解析封面  |
-|  intro  | 集合item中解析简介  |
-|  category  | 集合item中解析分类  |
-|  lastChapter  | 集合item中解析最后一章名称  |
-|  bookUrl  | 集合item中解析书籍链接  |
+|  books  | Recommended column book list collection |
+|  name  | The book title | is parsed in the collection item
+|  author  | Resolve the author | in the collection item
+|  cover  | Parse the cover page | in the collection item
+|  intro  | Introduction to parsing in collection items |
+|  category  | Parse the classification | in the collection item
+|  lastChapter  | The last chapter name | is resolved in the collection item
+|  bookUrl  | Parse book links in the collection item |
 
 ## bookInfo
-书籍详情
+Book details
 
-|  字段   | 说明  |
+|  Field | Description |
 |  ----  | ----  |
-|  name  | 书名  |
-|  author  | 作者  |
-|  cover  | 封面  |
-|  intro  | 简介  |
-|  category  | 分类  |
-|  lastChapter  | 最后一章名称  |
-|  updateTime  | 更新时间  |
-|  chapterUrl  | 所有章节列表链接（如果不为空则从解析的url中获取，如果空则在当前页面解析）  |
+|  name  | Book title |
+|  author  | Author |
+|  cover  | Cover |
+|  intro  | Introduction |
+|  category  | Classification |
+|  lastChapter  | The last chapter is titled |
+|  updateTime  | Update time |
+|  chapterUrl  | All chapter list links (taken from the resolved URL if not empty, resolved on the current page if empty) |
 
 ## chapter
-章节解析规则
-|  字段   | 说明  |
+Chapter parsing rules
+|  Field | Description |
 |  ----  | ----  |
-|  chapterList  | 章节列表集合  |
-|  chapterName  | 集合item解析章节名称  |
-|  chapterUrl  | 集合item解析章节url  |
-|  nextPage  | 下一页url，如果不为空则循环获取所有章节|
+|  chapterList  | Chapter List Collection |
+|  chapterName  | Collection item resolves chapter name |
+|  chapterUrl  | Collection item parses chapter url |
+|  nextPage  | Next page url, if not empty, loop to get all chapter |
 
 ## chapterContent
-章节内容规则
-|  字段   | 说明  |
+Chapter content rules
+|  Field | Description |
 |  ----  | ----  |
-|  content  | 章节内容  |
-|  nextPage  | 下一个xpath,如果不为空则循环获取下一页面  |
-|  replaceReg  | 正则替换内容  |
+|  content  | Chapter Contents |
+|  nextPage  | The next xpath, if not empty, loops to get the next page |
+|  replaceReg  | Regular replacement content |
