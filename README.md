@@ -1,40 +1,40 @@
 
 <p align="center">
     <br>
-    <img src="https://github.com/gstory0404/fun_reader/blob/master/assets/images/logo.png" width="120"/>
+    <img src="https://github.com/AbhiTheModder/Winread/blob/master/assets/images/logo.png" width="120"/>
     <br>
-    FunReader
+    WinRead
 <p>
 
-开源小说、漫画阅读器，支持android、ios、window、macos、linux多平台运行，支持自定义书源，支持多语言。
+Open source novel and comic reader, support Android, iOS, window, macOS, Linux multi-platform operation, support custom book sources, support multi-language.
 
-> 本项目仅供学习交流，请勿用于商业用途！！
+> This project is for learning and exchange only, please do not use it for commercial purposes!!
 
-# 主要功能
+# Main functions
 
-- 自定义书源导入
-- 小说搜索
-- 小说分类查看
-- 小说阅读
-- 漫画搜索
-- 漫画分类查看
-- 漫画阅读
-- 书架管理
-- 多语言支持
+- Custom book source import
+- Novel search
+- View novels by category
+- Novel reading
+- Manga search
+- Manga category view
+- Comic reading
+- Bookshelf management
+- Multi-language support
 
-## 预览
+## Preview
 
 |  macos   | android  |
 |  ----  | ----  |
-| <img src="https://github.com/gstory0404/fun_reader/blob/master/file/macos.gif" width="360px" height="400px"/>   | <img src="https://github.com/gstory0404/fun_reader/blob/master/file/phone.gif" width="210px" height="400px"/> |
+| <img src="https://github.com/AbhiTheModder/Winread/blob/master/file/macos.gif" width="360px" height="400px"/>   | <img src="https://github.com/AbhiTheModder/Winread/blob/master/file/phone.gif" width="210px" height="400px"/> |
 
 
-## 书源规则
+## Source rules
  
-[书源规则](https://github.com/gstory0404/fun_reader/blob/master/rule.md)
+[Source rules](https://github.com/AbhiTheModder/Winread/blob/master/rule.md)
 
-## 打包
-打包前需要查看文档配置[运行环境](https://docs.flutter.dev/deployment/android)
+## Pack
+You need to review the document configuration [Operating environment](https://docs.flutter.dev/deployment/android)
 
 - Android
 ```shell
@@ -47,19 +47,19 @@ flutter build ipa
 ```
 
 - Windows
-需要再window环境中编译
+Requires compilation in the a Windows environment
 ```shell
 flutter build windows
 ```
 
 - macOS
-需要再macOS环境中编译
+Requires compilation in the macOS environment
 ```shell
 flutter build macos
 ```
 
 - linux
-需要再linux环境中编译
+Requires compilation in a Linux environment
 ```shell
 snap install --classic flutter
 snap install --classic code
